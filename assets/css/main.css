@@ -115,6 +115,29 @@ body, html {
     }
 }
 
+@media (max-width: 730px) {
+    .half-cd img {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .share-icon i {
+        font-size: 2em;
+    }
+    .listen-buttons a img {
+    	width: 45px;
+    	height: 45px;
+    	margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .container {
+        top: 15%;
+    }
+}
+
 
 /* Share Modal */
 #share-modal {
