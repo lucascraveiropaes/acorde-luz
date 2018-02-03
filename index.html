@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Acorde Luz - Site Oficial</title>
+
+        <meta name="description" content="Site Oficial da Banda Acorde Luz">
+        <meta name="author" content="Lucas Craveiro Paes">
+
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <!-- CSS -->
+        <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./assets/css/main.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Social Tags For Twitter -->
+        <meta name="twitter:card" value="summary">
+        <meta name="twitter:title" content="Acorde Luz - Site Oficial">
+        <meta name="twitter:description" content="Site Oficial do Grupo Acorde Luz">
+        <meta name="twitter:creator" content="@lucascraveirop1">
+        <meta name="twitter:image" content="http://acordeluz.com.br/assets/img/logo.png">
+        
+        <!-- Social Tags For Everything Else -->
+
+        <meta property="og:title" content="Acorde Luz - Site Oficial">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://acordeluz.com.br/">
+        <meta property="og:image" itemprop="image" content="acordeluz.com.br/assets/img/logo.png">
+        <meta property="og:description" content="Site Oficial do Grupo Acorde Luz">
+        <meta property="og:site_name" content="Acorde Luz">
+        <meta property="fb:admins" content="1276189205800063">
+    </head>
+    <body>
+        <!-- Image Background With Blur and Opacity -->
+        <div class="background-image-blur"></div>
+
+        <!-- Share Icon Fixed on Top/Right -->
+        <a href="#" class="share-icon">
+            <i class="material-icons">share</i>
+        </a>
+
+
+        <!-- Page Content -->
+        <div class="container">
+            <div class="text-box">
+                <h1 class="page-title">Acorde Luz</h1>
+                <span>Encontre-nos no Spotify, Deezer, Youtube, etc</span>
+
+                <div class="listen-buttons">
+                    <a href="http://www.deezer.com/artist/13984011" target="_blank">
+                        <img src="./assets/img/icons/deezer.png">
+                    </a>
+                    <a href="https://open.spotify.com/artist/0tPFMSSUCANivbUivHN17p" target="_blank">
+                        <img src="./assets/img/icons/spotify.png">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCSCc3W6prUrslghLCP8gjNQ" target="_blank">
+                        <img src="./assets/img/icons/youtube.png">
+                    </a>
+                    <a href="https://www.instagram.com/acordeluz/" target="_blank">
+                        <img src="./assets/img/icons/instagram.png">
+                    </a>
+                    <a href="https://www.facebook.com/acordeluz/" target="_blank">
+                        <img src="./assets/img/icons/facebook.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Half Album on Page Bottom -->
+        <div class="half-cd">
+            <img src="./assets/img/half-album.png" class="cd-img">
+        </div>
+
+
+        <!-- Share Modal -->
+        <div id="share-modal">
+            <!-- Modal Content -->
+            <div class="share-modal-opacity"></div>
+            <div class="share-content">
+                <h4>Compartilhar:</h4>
+
+                <ul class="share-icons">
+                    <li>
+                        <a href="http://www.facebook.com/share.php?u=http://acordeluz.com.br/&amp;t=Acorde Luz" target="_blank" title="Facebook" rel="nofollow" class="facebook">
+                            <img src="./assets/img/share-icons/facebook.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/intent/tweet?text=Venha%20Conhecer%20Nossa%20Música%20em%20acordeluz.com.br%20&amp;hashtags=AcordeLuz" target="_blank" title="Twitter" rel="nofollow" class="twitter">
+                            <img src="./assets/img/share-icons/twitter.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/share?url=http://acordeluz.com.br" target="_blank" title="Google plus" rel="nofollow" class="google">
+                            <img src="./assets/img/share-icons/google-plus.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            $(".share-icon, .close-modal").click(function() {
+                $("#share-modal").fadeToggle( "fast", "linear" );
+            });
+
+            $(".share-modal-opacity").click(function() {
+                $("#share-modal").fadeToggle( "fast", "linear" );
+            });
+        </script>
+    </body>
+</html>

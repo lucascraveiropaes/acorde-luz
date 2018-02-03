@@ -1,0 +1,174 @@
+body, html {
+    font-family: 'Poiret One', cursive;
+}
+
+.background-image-blur {
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #FFF;
+    background-image: url('../img/background-blur.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .background-image-blur:before {
+        content:"";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        opacity: 0.3;
+    }
+
+.container {
+    position: absolute;
+    width: 100vw;
+    top: 30%;
+}
+
+.text-box {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+    .text-box .page-title {
+        text-align: center;
+        color: #fff;
+        font-size: 5em;
+        font-weight: 600;
+        margin-top: 0.5em;
+    }
+
+    .text-box p,
+    .text-box span {
+        color: #fff;
+        font-size: 1.6em;
+        font-weight: 500;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+.listen-buttons {
+    padding: 15px;
+    padding-top: 30px;
+}
+    .listen-buttons a {
+        color: transparent;
+        margin: 0 10px;
+        width: 60px;
+        height: 60px;
+        transform: scale(1.5, 1.5);
+    }
+    .listen-buttons a img {
+        width: 50px;
+        height: 50px;
+
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+    }
+    .listen-buttons a img:hover {
+        transform: scale(1.1, 1.1);
+    }
+
+
+.half-cd img {
+    position: absolute;
+    bottom: 0;
+    width: 40vw;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+.share-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #FFF;
+    border-radius: 50%;
+    padding: 20px;
+}
+    .share-icon:hover,
+    .share-icon:focus {
+        text-decoration: none;
+        color: #FFF;
+    }
+    .share-icon i {
+        font-size: 2.5em;
+    }
+
+@media (max-width: 1040px) {
+    .container {
+        top: 20%;
+    }
+    .half-cd img {
+        width: 80vw;
+    }
+    .share-icon i {
+        font-size: 2em;
+    }
+}
+
+
+/* Share Modal */
+#share-modal {
+    display: none;
+}
+    .share-modal-opacity {
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.6);
+            
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+    }
+
+    .share-content {
+        position: absolute;
+        bottom: 0;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        width: 100%;
+        z-index: 99;
+            
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+    }
+        .share-content h4 {
+            margin: 14px auto 34px 10px;
+            font-weight: 300;
+            color: #696969;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .share-icons {
+            padding: 0;
+            list-style: none;
+        }
+
+        .share-icons li {
+            display: inline-block;
+            padding: 0;
+        }
+
+        .share-icons li a img {
+            margin: auto 10px;
+            width: 50px;
+            border-radius: 4px;
+        }
