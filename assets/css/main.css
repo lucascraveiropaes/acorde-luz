@@ -138,6 +138,12 @@ body, html {
     }
 }
 
+@media (max-height: 520px) {
+    .half-cd img {
+        display: none;
+    }
+}
+
 
 /* Share Modal */
 #share-modal {
